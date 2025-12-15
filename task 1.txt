@@ -1,0 +1,32 @@
+import matplotlib.pyplot as plt
+import random
+
+# -----------------------------
+# Example 1: Histogram (Ages)
+# -----------------------------
+
+# Generate sample age data
+ages = [random.randint(0, 90) for _ in range(200)]
+
+plt.figure()
+plt.hist(ages, bins=10)
+plt.xlabel("Age")
+plt.ylabel("Frequency")
+plt.title("Distribution of Ages in a Population")
+plt.show()
+
+
+# -----------------------------
+# Example 2: Bar Chart (Gender)
+# -----------------------------
+
+# Sample gender data
+genders = ["Male", "Female", "Other"]
+counts = [95, 90, 15]
+
+plt.figure()
+plt.bar(genders, counts)
+plt.xlabel("Gender")
+plt.ylabel("Count")
+plt.title("Gender Distribution in a Population")
+plt.show()
